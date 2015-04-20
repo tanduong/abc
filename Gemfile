@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.1.2'
 
 gem 'rails', '4.2.1'
 gem 'pg'
@@ -31,3 +32,7 @@ group :development, :test do
   gem 'spring'
 end
 
+group :production do
+  gem 'rails_12factor'
+  gem 'heroku-deflater'
+end
