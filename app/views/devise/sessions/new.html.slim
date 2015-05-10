@@ -1,0 +1,20 @@
+= stylesheet_link_tag    'sign_in', media: 'all', 'data-turbolinks-track' => true
+.wrapper
+  .container
+    h1 Welcome
+    = form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: 'form'}) do |f|
+      = f.email_field :email, autofocus: true, placeholder: "Email"
+      = f.password_field :password, autocomplete: "off", placeholder: "Password"
+      button#login-button type="submit" Login
+  ul.bg-bubbles
+    li
+    li
+    li
+    li
+    li
+    li
+    li
+    li
+    li
+    li
+= render "devise/shared/links"

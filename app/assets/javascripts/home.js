@@ -512,5 +512,7 @@ function init () {
 }
 
 $(function(){
-  init();
+  if($('canvas').length > 0){
+    init();
+  }
 });
