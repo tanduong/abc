@@ -16,6 +16,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'unicorn'
 gem 'devise'
 gem 'figaro'
+gem 'slim-rails'
 
 group :development, :test do
   gem 'rspec-rails'

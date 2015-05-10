@@ -1,0 +1,82 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway)
+
+html, body
+  margin: 0px
+
+header, footer
+  font-family: Raleway
+  margin: 0 auto
+  padding: 5em 3em
+  text-align: center
+  background: #555
+  width: 100%
+  z-index: 1
+
+footer
+  position: fixed
+  bottom: 0px
+
+header h1
+  color: #AAA
+  font-size: 40px
+  font-weight: lighter
+  margin-bottom: 5px
+
+header span
+  color: #222
+
+footer span
+  color: #AAA
+
+div.container
+  font-family: Raleway
+  margin: 0 auto
+  padding: 2em 3em
+  text-align: center
+  position: fixed
+  top: 0px
+  z-index: 1
+  width: 100%
+
+div.container a
+  color: #FFF
+  text-decoration: none
+  font: 20px Raleway
+  margin: 0px 10px
+  padding: 10px 10px
+  position: relative
+  z-index: 1
+
+.green
+  background: #4caf50
+
+// Border X get width
+
+div.borderXwidth a:before, div.borderXwidth a:after
+  position: absolute
+  opacity: 0
+  width: 0%
+  height: 2px
+  content: ''
+  background: #FFF
+  transition: all 0.3s
+
+div.borderXwidth a:before
+  left: 0px
+  top: 0px
+
+div.borderXwidth a:after
+  right: 0px
+  bottom: 0px
+
+div.borderXwidth a:hover:before, div.borderXwidth a:hover:after
+  opacity: 1
+  width: 100%
+
+canvas.hello
+  margin: 0
+  display: block
+  position: absolute
+  top: 0
+  right: 0
+  background-color: #F1EDE3
